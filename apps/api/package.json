@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@ticket-platform/config": "workspace:*"
   }
 }

@@ -2,8 +2,23 @@
   "name": "@ticket-platform/config",
   "private": true,
   "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "@types/node": "^22.20.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "zod": "^4.6.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }
